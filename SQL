@@ -1,0 +1,3 @@
+SELECT p.name as productName, c.name as categoryName from products as p
+left JOIN productsToCategory as pc on p.id = pc.productid 
+left join catories as c on pc.categoryid = c.id
